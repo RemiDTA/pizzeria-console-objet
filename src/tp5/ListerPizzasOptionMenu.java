@@ -8,9 +8,10 @@ public class ListerPizzasOptionMenu extends OptionMenu {
 	}
 
 	@Override
-	void execute(Pizza[] piz) {
+	void execute(PizzaDaoImpl pDaoI) {
 		System.out.println(this.libele);
-
+		Pizza[] piz=pDaoI.findAllPizzas();
+		
 		for (int i = 0; i < piz.length; i++) {
 			if (piz[i] != null) {
 				System.out.println(piz[i].getCode() + "->" + piz[i].getNom() + "(" + piz[i].getPrix() + ")");

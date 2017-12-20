@@ -1,6 +1,6 @@
 package tp5;
 
-import fr.pizzeria.model.Pizza;
+
 
 public class ModifierPizzaOptionMenu extends OptionMenu{
 	public ModifierPizzaOptionMenu(String libele) {
@@ -8,13 +8,13 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 	}
 
 	@Override
-	void execute(Pizza[] pizzas) {
+	void execute(PizzaDaoImpl pDaoI) {
 	
 		SupprimerPizzaOptionMenu suppr= new SupprimerPizzaOptionMenu("Supprimer");
 		AjouterPizzaOptionMenu ajout= new AjouterPizzaOptionMenu("Ajout");
 		
-		suppr.execute(pizzas);
-		ajout.execute(pizzas);
+		suppr.execute(pDaoI);
+		ajout.execute(pDaoI);
 	
 	}
 	

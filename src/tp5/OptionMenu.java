@@ -1,15 +1,14 @@
 package tp5;
 
-import fr.pizzeria.model.Pizza;
 
-abstract class OptionMenu {
+abstract class OptionMenu{
 	protected String libele;
 	
 	public OptionMenu(String libele){
 		this.libele=libele;
 	}
 	
-	abstract void execute(Pizza[] pizzas);
+	abstract void execute(PizzaDaoImpl pDaoI);
 
 	public String getLibele() {
 		return libele;
