@@ -1,7 +1,6 @@
 package tp5;
 
 import fr.pizzeria.exception.DeletePizzaException;
-import fr.pizzeria.exception.SavePizzaException;
 
 abstract class OptionMenu{
 	protected String libele;
@@ -10,7 +9,7 @@ abstract class OptionMenu{
 		this.libele=libele;
 	}
 	
-	abstract void execute(PizzaDaoImpl pDaoI) throws DeletePizzaException, SavePizzaException;
+	abstract void execute(PizzaDaoImpl pDaoI) throws DeletePizzaException;
 
 	public String getLibele() {
 		return libele;

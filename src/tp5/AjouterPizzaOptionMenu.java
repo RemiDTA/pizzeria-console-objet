@@ -1,8 +1,6 @@
 package tp5;
 
 import java.util.Scanner;
-
-import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.model.Pizza;
 
 public class AjouterPizzaOptionMenu extends OptionMenu {
@@ -10,7 +8,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		super(libele);
 	}
 
-	void execute(PizzaDaoImpl pDaoI)throws SavePizzaException {
+	void execute(PizzaDaoImpl pDaoI) {
 		String code, nom;
 		double prix;
 
@@ -27,12 +25,8 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		Pizza p = new Pizza(code, nom, prix);
 
 		// Insertion de la nouvelle pizza
-		try{	
 		pDaoI.saveNewPizza(p);
-		}
-		catch (SavePizzaException save)
-		{}
-		
+
 	}
 
 }

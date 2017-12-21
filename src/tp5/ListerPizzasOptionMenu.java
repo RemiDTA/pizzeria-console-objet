@@ -1,5 +1,7 @@
 package tp5;
 
+import java.util.ArrayList;
+
 import fr.pizzeria.model.Pizza;
 
 public class ListerPizzasOptionMenu extends OptionMenu {
@@ -10,13 +12,10 @@ public class ListerPizzasOptionMenu extends OptionMenu {
 	@Override
 	void execute(PizzaDaoImpl pDaoI) {
 		System.out.println(this.libele);
-		Pizza[] piz=pDaoI.findAllPizzas();
-		
-		for (int i = 0; i < piz.length; i++) {
-			if (piz[i] != null) {
-				System.out.println(piz[i].getCode() + "->" + piz[i].getNom() + "(" + piz[i].getPrix() + ")");
-			}
+		ArrayList<Pizza> piz = pDaoI.findAllPizzas();
+
+		for (int i = 0; i < piz.size(); i++) {
+			System.out.println(piz.get(i).getCode() + "->" + piz.get(i).getNom() + "(" + piz.get(i).getPrix() + ")");
 		}
 	}
-
 }

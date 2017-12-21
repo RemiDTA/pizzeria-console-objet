@@ -1,7 +1,6 @@
 package tp5;
 
 import fr.pizzeria.exception.DeletePizzaException;
-import fr.pizzeria.exception.SavePizzaException;
 
 public class ModifierPizzaOptionMenu extends OptionMenu{
 	public ModifierPizzaOptionMenu(String libele) {
@@ -19,7 +18,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu{
 		ajout.execute(pDaoI);
 	
 		}
-		catch (DeletePizzaException | SavePizzaException maj)
+		catch (DeletePizzaException maj)
 		{
 			System.out.println("Probleme lors de la MAJ");
 		}
