@@ -10,9 +10,9 @@ public class Menu {
 	public Menu() {
 
 		menu[0] = new ListerPizzasOptionMenu("Lister");
-		menu[1] = new SupprimerPizzaOptionMenu("Ajout");
+		menu[1] = new SupprimerPizzaOptionMenu("Supprimer");
 		menu[2] = new ModifierPizzaOptionMenu("Modifier");
-		menu[3] = new AjouterPizzaOptionMenu("Supprimer");
+		menu[3] = new AjouterPizzaOptionMenu("Ajouter");
 		
 
 	}

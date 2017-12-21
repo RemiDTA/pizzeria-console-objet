@@ -2,11 +2,13 @@ package tp5;
 
 import java.util.Scanner;
 
+import fr.pizzeria.exception.DeletePizzaException;
+import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.model.Pizza;
 
 public class PizzeriaAdminConsoleApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws DeletePizzaException, SavePizzaException {
 		
 		Menu men=new Menu();
 		PizzaDaoImpl pDaoI=new PizzaDaoImpl();
@@ -41,6 +43,7 @@ public class PizzeriaAdminConsoleApp {
 				break;
 
 			}
+			
 		} while (nombreChoisit != 99);
 		System.out.println("Aurevoir :'(");
 		System.exit(0);

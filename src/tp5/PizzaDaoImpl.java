@@ -1,13 +1,15 @@
 package tp5;
 
 import fr.pizzeria.dao.IPizzaDao;
+import fr.pizzeria.exception.DeletePizzaException;
+import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.model.Pizza;
 
 public class PizzaDaoImpl implements IPizzaDao {
 
 	// private static Pizza[] pizzas=new Pizza[100];
 
-	private Pizza[] pizzas = new Pizza[100];
+	private Pizza[] pizzas = new Pizza[8];
 
 	public PizzaDaoImpl() {
 		this.pizzas[0] = new Pizza("PEP", "Pépéroni", 12.50);
@@ -25,27 +27,37 @@ public class PizzaDaoImpl implements IPizzaDao {
 	}
 
 	// Insertion d'une pizza
-	public void saveNewPizza(Pizza p) {
+	public void saveNewPizza(Pizza p) throws SavePizzaException {
+		boolean insertPizza = false;
 
 		for (int i = 0; i < this.pizzas.length; i++) {
 			if (this.pizzas[i] == null) {
-
 				this.pizzas[i] = p;
+				insertPizza = true;
 				break;
 			}
+
+		}
+		if (!insertPizza) {
+			throw new SavePizzaException();
 		}
 	}
 
-	public void deletePizza(String codePizza) {
+	public void deletePizza(String codePizza) throws DeletePizzaException {
 
+		boolean trouveCode = false;
 		for (int i = 0; i < this.pizzas.length; i++) {
-			if (codePizza.equals(this.pizzas[i].getCode())) {
-				this.pizzas[i] = null;
-				break;
+			if (this.pizzas[i] != null) {
+				if (codePizza.equals(this.pizzas[i].getCode())) {
+					trouveCode = true;
+					this.pizzas[i] = null;
+					break;
+				}
 			}
 		}
+		if (!trouveCode) {
+			throw new DeletePizzaException();
+		}
 	}
-
-
 
 }
