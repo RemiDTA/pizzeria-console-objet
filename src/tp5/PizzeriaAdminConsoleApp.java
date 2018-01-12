@@ -1,26 +1,35 @@
 package tp5;
 
+import static tp5.PizzeriaAdminConsoleApp.LOG;
+
+import java.sql.SQLException;
 import java.util.Scanner;
 
+import fr.pizzeria.dao.IPizzaDao;
+import fr.pizzeria.dao.PizzaDaoJdbc;
+import fr.pizzeria.exception.AddPizzaException;
 import fr.pizzeria.exception.DeletePizzaException;
 import fr.pizzeria.model.Pizza;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PizzeriaAdminConsoleApp {
 
-	public static void main(String[] args) throws DeletePizzaException {
+	public static final Logger LOG = LoggerFactory.getLogger(PizzeriaAdminConsoleApp.class);
+
+	public static void main(String[] args) throws DeletePizzaException, AddPizzaException, ClassNotFoundException, SQLException {
 
 		Menu men = new Menu();
-		PizzaDaoImpl pDaoI = new PizzaDaoImpl();
+		IPizzaDao pDaoI = new PizzaDaoJdbc();
 
 		int nombreChoisit;
 		do {
-
-			System.out.println("***** Pizzeria Administration *****");
-			System.out.println("1. Lister les pizzas");
-			System.out.println("2. Ajouter une nouvelle pizza");
-			System.out.println("3. Mettre à jour une pizza");
-			System.out.println("4. Supprimer une pizza");
-			System.out.println("99. Sortir");
+			LOG.info("***** Pizzeria Administration *****");
+			LOG.info("1. Lister les pizzas");
+			LOG.info("2. Ajouter une nouvelle pizza");
+			LOG.info("3. Mettre à jour une pizza");
+			LOG.info("4. Supprimer une pizza");
+			LOG.info("99. Sortir");
 
 			nombreChoisit = (new Scanner(System.in)).nextInt();
 			switch (nombreChoisit) {
@@ -43,7 +52,7 @@ public class PizzeriaAdminConsoleApp {
 			}
 
 		} while (nombreChoisit != 99);
-		System.out.println("Aurevoir :'(");
+		LOG.info("Aurevoir :'(");
 		System.exit(0);
 	}
 

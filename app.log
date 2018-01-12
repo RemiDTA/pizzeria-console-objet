@@ -1,0 +1,150 @@
+11:51:46.427 [main] INFO  tp5.ListerPizzasOptionMenu -
+				Lister
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				PEPPépéroni12.5Poisson
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				MARMargherita14.0Sans Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				REINLa Reine11.5Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				FROLa 4 fromages12.0Sans Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				CANLa cannibale12.5Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				SAVLa savoyarde13.0Sans Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				ORIL’orientale13.5Viande
+11:51:46.431 [main] INFO  tp5.ListerPizzasOptionMenu -
+				INDL’indienne14.0Poisson
+11:53:26.947 [main] INFO  tp5.ListerPizzasOptionMenu -
+				Lister
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				PEPPépéroni12.5Poisson
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				MARMargherita14.0Sans Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				REINLa Reine11.5Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				FROLa 4 fromages12.0Sans Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				CANLa cannibale12.5Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				SAVLa savoyarde13.0Sans Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				ORIL’orientale13.5Viande
+11:53:26.951 [main] INFO  tp5.ListerPizzasOptionMenu -
+				INDL’indienne14.0Poisson
+11:53:38.833 [main] INFO  tp5.ListerPizzasOptionMenu -
+				Lister
+11:53:38.833 [main] INFO  tp5.ListerPizzasOptionMenu -
+				PEPPépéroni12.5Poisson
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				MARMargherita14.0Sans Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				REINLa Reine11.5Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				FROLa 4 fromages12.0Sans Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				CANLa cannibale12.5Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				SAVLa savoyarde13.0Sans Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				ORIL’orientale13.5Viande
+11:53:38.834 [main] INFO  tp5.ListerPizzasOptionMenu -
+				INDL’indienne14.0Poisson
+11:55:05.644 [main] INFO  tp5.ListerPizzasOptionMenu -
+				Lister
+11:55:05.648 [main] INFO  tp5.ListerPizzasOptionMenu -
+				PEPPépéroni12.5Poisson
+11:55:05.648 [main] INFO  tp5.ListerPizzasOptionMenu -
+				MARMargherita14.0Sans Viande
+11:55:05.648 [main] INFO  tp5.ListerPizzasOptionMenu -
+				REINLa Reine11.5Viande
+11:55:05.649 [main] INFO  tp5.ListerPizzasOptionMenu -
+				FROLa 4 fromages12.0Sans Viande
+11:55:05.649 [main] INFO  tp5.ListerPizzasOptionMenu -
+				CANLa cannibale12.5Viande
+11:55:05.649 [main] INFO  tp5.ListerPizzasOptionMenu -
+				SAVLa savoyarde13.0Sans Viande
+11:55:05.649 [main] INFO  tp5.ListerPizzasOptionMenu -
+				ORIL’orientale13.5Viande
+11:55:05.649 [main] INFO  tp5.ListerPizzasOptionMenu -
+				INDL’indienne14.0Poisson
+11:56:37.131 [main] INFO  tp5.ListerPizzasOptionMenu -
+				Lister
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				PEPPépéroni12.5Poisson
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				MARMargherita14.0Sans Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				REINLa Reine11.5Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				FROLa 4 fromages12.0Sans Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				CANLa cannibale12.5Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				SAVLa savoyarde13.0Sans Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				ORIL’orientale13.5Viande
+11:56:37.135 [main] INFO  tp5.ListerPizzasOptionMenu -
+				INDL’indienne14.0Poisson
+12:11:47.340 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				***** Pizzeria Administration *****
+12:11:47.342 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				1. Lister les pizzas
+12:11:47.342 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				2. Ajouter une nouvelle pizza
+12:11:47.342 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				3. Mettre à jour une pizza
+12:11:47.342 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				4. Supprimer une pizza
+12:11:47.342 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				99. Sortir
+12:12:58.307 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				***** Pizzeria Administration *****
+12:12:58.310 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				1. Lister les pizzas
+12:12:58.310 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				2. Ajouter une nouvelle pizza
+12:12:58.310 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				3. Mettre à jour une pizza
+12:12:58.310 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				4. Supprimer une pizza
+12:12:58.310 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				99. Sortir
+11:33:27.316 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				***** Pizzeria Administration *****
+11:33:27.319 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				1. Lister les pizzas
+11:33:27.319 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				2. Ajouter une nouvelle pizza
+11:33:27.319 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				3. Mettre à jour une pizza
+11:33:27.319 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				4. Supprimer une pizza
+11:33:27.319 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				99. Sortir
+11:34:16.176 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				***** Pizzeria Administration *****
+11:34:16.178 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				1. Lister les pizzas
+11:34:16.178 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				2. Ajouter une nouvelle pizza
+11:34:16.178 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				3. Mettre à jour une pizza
+11:34:16.178 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				4. Supprimer une pizza
+11:34:16.178 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				99. Sortir
+11:37:15.906 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				***** Pizzeria Administration *****
+11:37:15.909 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				1. Lister les pizzas
+11:37:15.909 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				2. Ajouter une nouvelle pizza
+11:37:15.909 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				3. Mettre à jour une pizza
+11:37:15.909 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				4. Supprimer une pizza
+11:37:15.909 [main] INFO  tp5.PizzeriaAdminConsoleApp -
+				99. Sortir

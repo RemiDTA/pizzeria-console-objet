@@ -1,28 +1,31 @@
 package tp5;
 
+import fr.pizzeria.dao.IPizzaDao;
+import fr.pizzeria.exception.AddPizzaException;
 import fr.pizzeria.exception.DeletePizzaException;
+import static tp5.PizzeriaAdminConsoleApp.LOG;
 
-public class ModifierPizzaOptionMenu extends OptionMenu{
+import java.sql.SQLException;
+
+public class ModifierPizzaOptionMenu extends OptionMenu {
 	public ModifierPizzaOptionMenu(String libele) {
 		super(libele);
 	}
 
 	@Override
-	void execute(PizzaDaoImpl pDaoI) {
-	
-		SupprimerPizzaOptionMenu suppr= new SupprimerPizzaOptionMenu("Supprimer");
-		AjouterPizzaOptionMenu ajout= new AjouterPizzaOptionMenu("Ajout");
-		
+	void execute(IPizzaDao pDaoI) throws ClassNotFoundException, SQLException, AddPizzaException {
+
+		SupprimerPizzaOptionMenu suppr = new SupprimerPizzaOptionMenu("Supprimer");
+		AjouterPizzaOptionMenu ajout = new AjouterPizzaOptionMenu("Ajout");
+
 		try {
-		suppr.execute(pDaoI);
-		ajout.execute(pDaoI);
-	
-		}
-		catch (DeletePizzaException maj)
-		{
-			System.out.println("Probleme lors de la MAJ");
+			suppr.execute(pDaoI);
+			ajout.execute(pDaoI);
+
+		} catch (DeletePizzaException maj) {
+			LOG.info("Probleme lors de la MAJ");
 		}
 
 	}
-	
+
 }

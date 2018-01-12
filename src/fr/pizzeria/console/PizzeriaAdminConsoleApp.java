@@ -30,7 +30,7 @@ public class PizzeriaAdminConsoleApp {
 		System.out.println("Veuillez saisir le prix");
 		prix = (new Scanner(System.in)).nextDouble();
 		
-		Pizza p = new Pizza(code, nom, prix);
+		Pizza p = new Pizza(code, nom, prix, null);
 		
 		//Insertion de la nouvelle pizza
 		for (int i=0; i<piz.length; i++)
@@ -75,14 +75,14 @@ public class PizzeriaAdminConsoleApp {
 	public static void main(String[] args) {
 
 		Pizza[] pizzas = new Pizza[100];
-		pizzas[0]=new Pizza("PEP", "Pépéroni", 12.50);
-		pizzas[1]=new Pizza("MAR", "Margherita", 14.00);
-		pizzas[2]=new Pizza("REIN", "La Reine", 11.50);
-		pizzas[3]=new Pizza("FRO", "La 4 fromages", 12.00);
-		pizzas[4]=new Pizza("CAN", "La cannibale", 12.50);
-		pizzas[5]=new Pizza("SAV", "La savoyarde", 13.00);
-		pizzas[6]=new Pizza("ORI", "L’orientale", 13.50);
-		pizzas[7]=new Pizza("IND", "L’indienne", 14.00);	
+		pizzas[0]=new Pizza("PEP", "Pépéroni", 12.50, null);
+		pizzas[1]=new Pizza("MAR", "Margherita", 14.00, null);
+		pizzas[2]=new Pizza("REIN", "La Reine", 11.50, null);
+		pizzas[3]=new Pizza("FRO", "La 4 fromages", 12.00, null);
+		pizzas[4]=new Pizza("CAN", "La cannibale", 12.50, null);
+		pizzas[5]=new Pizza("SAV", "La savoyarde", 13.00, null);
+		pizzas[6]=new Pizza("ORI", "L’orientale", 13.50, null);
+		pizzas[7]=new Pizza("IND", "L’indienne", 14.00, null);	
 		
 		int nombreChoisit;
 		do {
